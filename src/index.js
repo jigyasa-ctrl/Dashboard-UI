@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Error from './Components/Error';
+import Signup from './Components/Signup';
+
+const routing = (
+<Router>
+  <div>
+    <Switch>
+    <Route exact path ="/"  component={App}/>
+    <Route path="/signup" render = {() => (<Signup />)} />
+     {/*<Route component={<Error />} />*/}
+    </Switch>
+  </div>
+</Router>
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  routing,
   document.getElementById('root')
 );
 
