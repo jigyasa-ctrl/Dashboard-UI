@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Cards from './SubComponent/Cards'
+import LineCharts from './SubComponent/LineChart'
 
 function DashUi() {
     return (
@@ -10,7 +12,9 @@ function DashUi() {
                 <Cards color="#EFDADA"/>
                 <Cards color="#DEE0EF" />
             </div>
-            <div></div>
+            <div class="chart">
+           <LineCharts />
+           </div>
             <div></div>
         </div>
     )

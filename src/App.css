@@ -219,6 +219,9 @@ body {
   border-radius: var(--border);
 
 }
+.chart{
+  background-color: var(--text-color);
+}
 
 @media only screen and (max-width: 600px) {
   .login-side{
