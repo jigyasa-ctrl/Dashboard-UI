@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom'
 
 function Signup({ signup }) {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
   return (
     <div className="login">
       <div className="login-side">
@@ -18,7 +20,7 @@ function Signup({ signup }) {
           <div className="form-sub">
             <span className="form">
               <label>First Name</label>
-              <input type="name" placeholder="First Name"></input>
+              <input type="name" placeholder="First Name" onChange={(e) =>localStorage.setItem('name', e.target.value)}></input>
             </span>
             <span className="form">
               <label>Last Name</label>
@@ -26,9 +28,9 @@ function Signup({ signup }) {
             </span>
           </div>
           <label>Email Address</label>
-          <input type="email" placeholder="Enter Your Email"></input>
+          <input type="email" placeholder="Enter Your Email" onChange={(e) =>localStorage.setItem('email', e.target.value)}></input>
           <label>Password</label>
-          <input type="password" placeholder="Enter Your Password"></input>
+          <input type="password" placeholder="Enter Your Password" onChange={(e) =>localStorage.setItem('password', e.target.value)}></input>
 
           <label>Confirm Password</label>
           <input type="password" placeholder="Confirm Password"></input>

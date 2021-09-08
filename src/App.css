@@ -108,7 +108,14 @@ body {
   color: var(--text-color);
   text-decoration: none;
 }
-
+.loader{
+  position: absolute;
+  top:5%;
+  left: 40%;
+  padding: 1rem;
+  width: auto;
+  color: var(--text-color);
+}
 .form > button {
   margin-top: 20px;
   height: 2rem;
