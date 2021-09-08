@@ -1,17 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 :root{
   --text-color: #fff;
+  --grey: #F5F5F5;
+  --border: 10px;
+  --royal-blue: #0D5F9A;
+  --font: 'Montserrat', sans-serif;
 }
 .login-side{
   height: 100vh;
   width: 30rem;
-  background-color: #0D5F9A;
+  background-color: var(--royal-blue);
   display: flex;
   align-items: center;
   justify-content: center;
   color:var(--text-color) ;
   font-size: 3rem;
 }
+.login-form{
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--grey);
+  height: 100vh;
+  
+}
+.form{
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  background-color: var(--text-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: var(--border);
+}
+.form >label{
+  font-weight: 500;
+  margin-top: 10px;
+}
+.form>input{
+  width: 20rem;
+  background-color:var(--grey) ;
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  border-radius:var(--border) ;
+
+}
+.form>button{
+  margin-top: 20px;
+  height: 2rem;
+  background-color: var(--royal-blue);
+  border: none;
+  color: var(--text-color);
+  font-family: var(--font);
+}
+.form > a{
+  font-size: 13px;
+  margin-top: 10px;
+  color: var(--royal-blue);
+  cursor: pointer;
+}
 .login{
 display:flex;
 flex-direction: row;
+align-items: center;
 }
