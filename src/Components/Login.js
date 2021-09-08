@@ -8,7 +8,7 @@ function Login() {
            </div>
            <div className="login-form">
                <h1>Sign In</h1>
-               <p>Sign in to your account</p>
+               <p className="sign-in">Sign in to your account</p>
                <span>
                   <button>Signin with google</button>
                   <button>Signin with Apple</button>
@@ -23,6 +23,7 @@ function Login() {
                    <button>Sign in</button>
 
                </form>
+               <p className="register">Don't have an account ? Register Here</p>
            </div>
         </div>
     )

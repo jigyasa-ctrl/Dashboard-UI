@@ -23,11 +23,32 @@ body{
   width: 60rem;
   display: flex;
   align-items: center;
+  text-align: start;
   justify-content: center;
   flex-direction: column;
   background-color: var(--grey);
   height: 100vh;
   
+}
+.login-form> h1{
+  margin: 0px;
+  margin-left: -15rem
+}
+.login-form> .sign-in{
+  
+  margin-left: -10rem
+}
+.login-form> .sign-in{
+  
+  margin-left: -10rem
+}
+.login-form> .register{
+  font-size: 13px;
+  color: #333;
+}
+.login-form >span{
+  margin: 0px;
+  margin-left: -6rem
 }
 .form{
   display: flex;
