@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-body{
-  font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
 }
-:root{
+:root {
   --text-color: #fff;
-  --grey: #F5F5F5;
+  --grey: #f5f5f5;
   --border: 10px;
-  --royal-blue: #0D5F9A;
-  --font: 'Montserrat', sans-serif;
+  --royal-blue: #0d5f9a;
+  --font: "Montserrat", sans-serif;
 }
-.login-side{
+.login-side {
   height: 100vh;
   width: 30rem;
   background-color: var(--royal-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  color:var(--text-color) ;
+  color: var(--text-color);
   font-size: 3rem;
 }
-.login-form{
+.login-form {
   width: 60rem;
   display: flex;
   align-items: center;
@@ -28,29 +28,40 @@ body{
   flex-direction: column;
   background-color: var(--grey);
   height: 100vh;
-  
 }
-.login-form> h1{
+.login-form > h1 {
   margin: 0px;
-  margin-left: -15rem
+  margin-left: -15rem;
 }
-.login-form> .sign-in{
-  
-  margin-left: -10rem
+.signup > h1 {
+  margin: 0px;
+  margin-left: -5rem;
 }
-.login-form> .sign-in{
-  
-  margin-left: -10rem
+
+.login-form > .sign-in {
+  margin-left: -10rem;
 }
-.login-form> .register{
+.signup > .sign-in {
+  margin-left: -5rem;
+}
+
+.login-form > .register {
   font-size: 13px;
   color: #333;
-}
-.login-form >span{
   margin: 0px;
-  margin-left: -6rem
 }
-.form{
+.login-form > span {
+  margin: 0px;
+  margin-left: -6rem;
+}
+.login-form > span > button {
+  background-color: var(--text-color);
+  padding: 5px;
+  border: 1px solid var(--royal-blue);
+  margin: 5px;
+  border-radius: var(--border);
+}
+.form {
   display: flex;
   text-align: start;
   flex-direction: column;
@@ -59,35 +70,62 @@ body{
   margin: 20px;
   border-radius: var(--border);
 }
-.form >label{
+.form-sub {
+  display: flex;
+  text-align: start;
+  flex-direction: row;
+  background-color: var(--text-color);
+  border-radius: var(--border);
+}
+.form > label,
+.form-sub > label {
   font-weight: 500;
   margin-top: 10px;
 }
-.form>input{
-  width: 20rem;
-  background-color:var(--grey) ;
-  border: none;
-  height: 40px;
-  margin-top: 20px;
-  border-radius:var(--border) ;
-
+.form-sub > .form {
+  padding: 0px;
+  margin: 0px;
 }
-.form>button{
+.form-sub > .form > input {
+  width: 9rem;
+  margin-right: 15px;
+}
+.form > input {
+  width: 20rem;
+  background-color: var(--grey);
+  border: none;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: var(--border);
+}
+.form > input::placeholder {
+  padding-left: 10px;
+}
+.form > input::target-text {
+  padding-left: 10px;
+}
+.link-class{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.form > button {
   margin-top: 20px;
   height: 2rem;
   background-color: var(--royal-blue);
   border: none;
   color: var(--text-color);
   font-family: var(--font);
+  border-radius: var(--border);
 }
-.form > a{
+.form > a {
   font-size: 13px;
   margin-top: 10px;
   color: var(--royal-blue);
   cursor: pointer;
 }
-.login{
-display:flex;
-flex-direction: row;
-align-items: center;
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
