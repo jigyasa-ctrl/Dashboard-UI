@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 :root {
   --text-color: #fff;
@@ -9,10 +10,14 @@ body {
   --royal-blue: #0d5f9a;
   --font: "Montserrat", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 .dashUI{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  scroll-behavior: overlay;
 }
 .login-side {
   height: 100vh;
@@ -26,10 +31,15 @@ body {
 }
 .topbar-container{
   width: 80rem;
-  margin: 20px
+  margin: 20px;
 }
 .dashboard, .topbar{
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pie-user{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,6 +50,17 @@ body {
 }
 .dashboard{
   background-color: var(--grey);
+}
+.meeting{
+  border-left-style: solid;
+  border-left-color: coral;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.meeting > h5{
+  margin: 5px;
+  margin-left: 10px;
+ 
 }
 .sidebar{
   height: 90vh;
@@ -195,7 +216,7 @@ body {
 }
 .card > h3{
   margin: 0px;
-  margin-top:5px;
+  margin-top:10px;
 }
 .card > p{
   
@@ -219,13 +240,26 @@ body {
   border-radius: var(--border);
 
 }
+
 .chart > h3, .chart > p{
   margin-left: 20px;
 }
 .chart{
   background-color: var(--text-color);
+  border-radius: var(--border);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.piechart{
+  background-color: var(--text-color);
+  border-radius: var(--border);
+  width: 35vw;
+ 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.piechart > h3 {
+  margin-left: 15px
 }
 .legend{
   position: relative;
