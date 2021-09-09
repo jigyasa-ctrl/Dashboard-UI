@@ -50,7 +50,7 @@ function LineCharts() {
 
 
     return (
-      <ResponsiveContainer height={300} width="90%">
+      <ResponsiveContainer height={250} width="100%">
         <LineChart
           data={data}
           margin={{
@@ -60,13 +60,13 @@ function LineCharts() {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid  vertical={false}/>
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Legend layout="horizontal" iconType="circle" align="right" wrapperStyle={{top: '-30%'}} />
+          <Line type="monotone" dataKey="pv" stroke="#9BDD7C" activeDot={{ r: 8 }} strokeWidth={3} />
+          <Line type="monotone" dataKey="uv" stroke="#E9A0A0" strokeWidth={3}/>
         </LineChart>
       </ResponsiveContainer>
     );

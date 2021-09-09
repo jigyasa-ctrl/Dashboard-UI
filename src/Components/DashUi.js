@@ -13,6 +13,8 @@ function DashUi() {
                 <Cards color="#DEE0EF" />
             </div>
             <div class="chart">
+                <h3>Activities</h3>
+                <p style={{color: '#858585'}}>May-June 2021</p>
            <LineCharts />
            </div>
             <div></div>
