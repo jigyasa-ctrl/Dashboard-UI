@@ -11,7 +11,7 @@ function Sidebar() {
           <p>Transaction</p>
           <p>Schedules</p>
           <p><Link className="link-class" to="/users"> Users</Link></p>
-          <p>Settings</p>
+          <p><Link className="link-class" to="/settings">Settings</Link></p>
         </span>
       </div>
     </div>

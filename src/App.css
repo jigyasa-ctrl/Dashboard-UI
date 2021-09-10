@@ -236,12 +236,16 @@ body {
   color: var(--royal-blue);
   cursor: pointer;
 }
-.login {
+.login, .flex {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.cards{
+.flex{
+  justify-content: space-between;
+}
+
+.cards {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -274,7 +278,8 @@ body {
 
 }
 
-.chart > h3, .chart > p, .chart > span >h3{
+
+.chart > h3, .chart > p, .chart > span >h3, .chart-settings > p, .flex > p{
   margin-left: 20px;
 }
 .chart >span, .chart > span> span{
@@ -286,12 +291,21 @@ body {
 .chart > span> span{
   margin-right: 20px;
 }
-.chart{
+.chart, .chart-settings{
   background-color: var(--text-color);
   border-radius: var(--border);
   padding-top: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.chart-settings{
+  width: 23rem;
+  margin-left: 1rem;
+  padding-bottom: 20px;
+  
+}
+.flex > label{
+  margin-right: 20px
 }
 .piechart{
   background-color: var(--text-color);
@@ -309,6 +323,87 @@ body {
   top: 5%;
   left: 90%
 }
+.settings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-settings{
+  width:33rem;
+
+}
+.form-settings>input{
+  width: auto;
+}
+.flex > button{
+  border: 1px solid red;
+  background-color: var(--text-color);
+  color: red;
+  margin-left: 5em;
+  width: 15rem;
+  padding:10px
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  top:1px;
+  height: 18px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #88E15E  ;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #88E15E
+  ;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 @media only screen and (max-width: 600px) {
   .login-side{
@@ -320,6 +415,21 @@ body {
   .sidebar{
     display: none;
 
+  }
+  .form-settings{
+    width: auto;
+  }
+  .form-settings-2{
+    flex-direction: column;
+  }
+  .settings{
+    flex-direction: column;
+  }
+  .account, .account>input{
+    width: auto;
+  }
+  .chart-settings{
+    width: auto;
   }
   .cards{
     display: grid;
