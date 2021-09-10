@@ -19,6 +19,19 @@ body {
   justify-content: center;
   scroll-behavior: overlay;
 }
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--grey);
+  padding: 5px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: var(--border);
+}
+.user > img{
+  border-radius: 50%;
+}
 .login-side {
   height: 100vh;
   width: 30rem;
@@ -163,7 +176,7 @@ body {
   margin-top: 10px;
   border-radius: var(--border);
 }
-.topbar > span > input {
+.topbar > span > input, .user-search >input {
   width: 10rem;
   background-color: var(--text-color);
   border: none;
@@ -172,6 +185,26 @@ body {
   border-radius: var(--border);
   outline: none;
 }
+.user-search >input{
+  background-color: var(--grey);
+}
+.user-search>select{
+  border: 1x solid var(--grey);
+  background-color: var(--grey) ;
+  border-radius: var(--border);
+  width: 4rem;
+  height: 2rem;
+}
+.user-search>button {
+  background-color: var(--royal-blue);
+  border: none;
+  width: 4rem;
+  height: 2rem;
+  color: var(--text-color);
+  border-radius: var(--border);
+  margin-left: 10px;
+}
+
 .form > input::placeholder {
   padding-left: 10px;
 }
@@ -241,12 +274,22 @@ body {
 
 }
 
-.chart > h3, .chart > p{
+.chart > h3, .chart > p, .chart > span >h3{
   margin-left: 20px;
+}
+.chart >span, .chart > span> span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart > span> span{
+  margin-right: 20px;
 }
 .chart{
   background-color: var(--text-color);
   border-radius: var(--border);
+  padding-top: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -273,5 +316,30 @@ body {
   }
   body{
     background-color: var(--grey);
+  }
+  .sidebar{
+    display: none;
+
+  }
+  .cards{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+
+  }
+  .card{
+    width: 6rem;
+  }
+  .pie-user{
+    flex-direction: column;
+  }
+  .piechart{
+    width: auto;
+  }
+  .topbar > span {
+    display: none;
+  }
+  .user{
+    font-size: smaller;
   }
 }

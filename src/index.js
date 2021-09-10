@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Error from './Components/Error';
 import Signup from './Components/Signup';
 import Dashboard from './Components/Dashboard';
+import Users from './Components/Users';
 
 const routing = (
 <Router>
@@ -15,6 +16,7 @@ const routing = (
     <Route exact path ="/"  component={App}/>
     <Route path="/signup" render = {() => (<Signup />)} />
     <Route path="/dashboard" render = {() => (<Dashboard />)} />
+    <Route path="/users" render = {() => (<Users />)} />
      {/*<Route component={<Error />} />*/}
     </Switch>
   </div>

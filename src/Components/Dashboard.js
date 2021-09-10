@@ -8,7 +8,7 @@ function Dashboard() {
     <div class="dashboard">
       <Sidebar />
       <div class="topbar-container" style={{overflow: 'overlay', height: '40rem'}}>
-        <Topbar />
+        <Topbar title="Dashboard" />
         <DashUi />
       </div>
     </div>
