@@ -6,7 +6,7 @@
 - In the users page filters and search is enabled for name, email, userRole and gender.
 - Fully responsive web application
 
-Check out live demo here: 
+Check out live demo here: https://dash-interface.netlify.app/
 
 ## Steps
 
