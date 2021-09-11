@@ -58,7 +58,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.topbar > span {
+.topbar > .search {
   display: flex;
   align-items: center;
 }
@@ -174,7 +174,7 @@ body {
   margin-top: 10px;
   border-radius: var(--border);
 }
-.topbar > span > input,
+.topbar > .search > input,
 .user-search > input {
   width: 10rem;
   background-color: var(--text-color);
@@ -356,7 +356,9 @@ body {
   width: 0;
   height: 0;
 }
-
+.burger-icon{
+  display: none;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -404,11 +406,23 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.close{
+  display: none;
+}
+.sidebar-bottom{
+  bottom: 5%;
+}
 
 @media only screen and (max-width: 600px) {
   .login-side {
     display: none;
   }
+ .close{
+   display: flex;
+   position: absolute;
+   top:7%;
+   right:20%
+ }
   body {
     background-color: var(--grey);
   }
@@ -424,6 +438,7 @@ input:checked + .slider:before {
   .settings {
     flex-direction: column;
   }
+  
   .account,
   .account > input {
     width: auto;
@@ -445,8 +460,12 @@ input:checked + .slider:before {
   .piechart {
     width: auto;
   }
-  .topbar > span {
+  .topbar > .search {
     display: none;
+  }
+  .burger-icon{
+    display: flex;
+    align-items: center;
   }
   .user {
     font-size: smaller;

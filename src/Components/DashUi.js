@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Cards from "./SubComponent/Cards";
 import LineCharts from "./SubComponent/LineChart";
 import Example from "./SubComponent/Piechart";
-import Piecharts from "./SubComponent/Piechart";
 
 function DashUi({ data }) {
   const [dashboardData, setDashboardData] = useState(Object.values(data[0]));

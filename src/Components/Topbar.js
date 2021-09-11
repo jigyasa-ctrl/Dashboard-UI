@@ -1,9 +1,16 @@
 import React from "react";
 
 function Topbar({ title }) {
+    function menu() {
+        document.getElementsByClassName('sidebar')[0].style.display = 'flex'
+        document.getElementsByClassName('sidebar')[0].style.width = '80vw'
+    }
   return (
     <div className="topbar">
       <h1>{title}</h1>
+      <span className="burger-icon" onClick={menu}>
+      <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
+      </span>
       <span className="search">
         <input placeholder="Search..." />
         <img

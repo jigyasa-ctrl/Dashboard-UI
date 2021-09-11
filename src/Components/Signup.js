@@ -28,7 +28,7 @@ function Signup({ signup }) {
             </span>
             <span className="form">
               <label>Last Name</label>
-              <input type="name" placeholder="Last Name"></input>
+              <input type="name" placeholder="Last Name" onChange={(e) => localStorage.setItem("lastname", e.target.value)}></input>
             </span>
           </div>
           <label>Email Address</label>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import User from "./SubComponent/User";
-import Topbar from "./Topbar";
 import axios from "axios";
 
 function Usersui() {
@@ -8,6 +7,7 @@ function Usersui() {
   const [filter, setFilter] = useState([]);
   function filterData(value) {
     setFilter(apiData[4].filter((data) => data.name == value));
+    setFilter(apiData[4].filter((data) => data.email == value));
     if (value === "Admin") {
       setFilter(apiData[4].filter((data) => data.userRole == value));
     } else if (value === "User") {

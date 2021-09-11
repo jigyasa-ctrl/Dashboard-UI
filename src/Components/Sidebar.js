@@ -6,6 +6,7 @@ function Sidebar() {
     <div>
       <div className="sidebar">
         <h1>Dash.</h1>
+        <img className="close" onClick={() => document.getElementsByClassName('sidebar')[0].style.display = 'none'} src="https://img.icons8.com/windows/32/ffffff/close-window.png"/>
         <span>
           <p>
             <Link className="link-class" to="/dashboard">
@@ -25,6 +26,12 @@ function Sidebar() {
               Settings
             </Link>
           </p>
+        </span>
+        <span class="sidebar-bottom">
+          <p>Help</p>
+          <p> <Link className="link-class" to="/">
+              Logout
+            </Link></p>
         </span>
       </div>
     </div>

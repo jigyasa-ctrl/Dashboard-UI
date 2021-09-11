@@ -36,7 +36,7 @@ function SettingsUI({data}) {
             </span>
           </div>
           <label>Date of Birth</label>
-          <input type="date" placeholder="Enter Your Email" value={data.dob}></input>
+          <input type="text" placeholder="Enter Your Email" value={data.dob}></input>
           <label>Phone Number</label>
           <input
             type="tel"
