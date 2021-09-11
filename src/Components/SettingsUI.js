@@ -1,6 +1,7 @@
 import React from "react";
 
-function SettingsUI() {
+function SettingsUI({data}) {
+  console.log(data, "yuh");
   return (
     <div className="settings">
       <div>
@@ -8,7 +9,7 @@ function SettingsUI() {
           <h3>Profile</h3>
 
           <img
-            src="https://static.turbosquid.com/Preview/2019/01/11__00_35_27/FM_TS2.pngEBF2CE9A-EAC1-48D4-BA04-987494C205A2Large.jpg"
+            src={data.image}
             height="100px"
             width="100px"
             style={{ borderRadius: "50%" }}
@@ -35,19 +36,19 @@ function SettingsUI() {
             </span>
           </div>
           <label>Date of Birth</label>
-          <input type="date" placeholder="Enter Your Email"></input>
+          <input type="date" placeholder="Enter Your Email" value={data.dob}></input>
           <label>Phone Number</label>
           <input
             type="tel"
             placeholder=""
             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-            value="813456789"
+            value={data.number}
           ></input>
           <label>Address</label>
           <input
             type="text"
             placeholder=""
-            value="323 Fifth Ave. Canadiana, NY"
+            value={data.address}
           ></input>
         </form>
       </div>
