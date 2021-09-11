@@ -1,7 +1,7 @@
 # Getting Started with DashBoard UI
 
 This project has data integrated with https://jigyasa-ctrl.github.io/public-api/dashboard.json.
-Grapgh data UI is done with recharts.
+Grapgh data UI is done with recharts. React-router is used for different routes.
 
 Check out live demo here: 
 
