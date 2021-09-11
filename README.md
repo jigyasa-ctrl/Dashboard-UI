@@ -1,6 +1,7 @@
 # Getting Started with DashBoard UI
 
 - This project has data integrated with open API https://jigyasa-ctrl.github.io/public-api/dashboard.json.
+- Repository for open API - https://github.com/jigyasa-ctrl/public-api
 - Graph data UI is done with recharts. 
 - React-router is used for different routes.
 - In the users page filters and search is enabled for name, email, userRole and gender.
