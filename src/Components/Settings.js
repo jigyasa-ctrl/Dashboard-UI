@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
-import DashUi from "./DashUi";
 import SettingsUI from "./SettingsUI";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import axios from "axios";
+
+/* Settings main Page */
 
 function Settings() {
   const [apiData, setApiData] = useState([]);

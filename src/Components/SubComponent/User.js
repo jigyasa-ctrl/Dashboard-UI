@@ -1,6 +1,7 @@
 import React from "react";
 
 function User({ value }) {
+    /* User tempate */
   return (
     <div className="user">
       <img src={value.image} height="50px" width="50px" />

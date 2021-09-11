@@ -10,6 +10,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+/* Line chart component */
+
 const dataDefault = [
   {
     name: "Page A",

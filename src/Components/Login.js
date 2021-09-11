@@ -9,6 +9,8 @@ function Login({ signup }) {
   const [color, setColor] = useState("");
   const [display, setDisplay] = useState("");
 
+  /* Login Page  Component */
+
   function signIn(e) {
     e.preventDefault();
     if (

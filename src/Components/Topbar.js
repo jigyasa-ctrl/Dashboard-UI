@@ -1,5 +1,5 @@
 import React from "react";
-
+/* Top bar component */
 function Topbar({ title }) {
     function menu() {
         document.getElementsByClassName('sidebar')[0].style.display = 'flex'

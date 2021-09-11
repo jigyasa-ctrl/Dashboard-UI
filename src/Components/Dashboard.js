@@ -4,6 +4,8 @@ import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import axios from "axios";
 
+/* Dashboard main page */
+
 function Dashboard() {
   const [apiData, setApiData] = useState([]);
   useEffect(() => {

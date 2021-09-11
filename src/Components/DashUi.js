@@ -5,13 +5,12 @@ import LineCharts from "./SubComponent/LineChart";
 import Example from "./SubComponent/Piechart";
 
 function DashUi({ data }) {
-  const [dashboardData, setDashboardData] = useState(Object.values(data[0]));
+  const dashboardData = Object.values(data[0]);
   const graphData = data[1];
   const pieData = data[2];
   const meetingsData = data[3];
-  console.log(graphData, "graph");
-
-  console.log(dashboardData);
+  
+/* Dashboard Component */
 
   return (
     <div class="dashUI">

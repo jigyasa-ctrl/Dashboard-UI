@@ -28,7 +28,6 @@ function Sidebar() {
           </p>
         </span>
         <span class="sidebar-bottom">
-          <p>Help</p>
           <p> <Link className="link-class" to="/">
               Logout
             </Link></p>

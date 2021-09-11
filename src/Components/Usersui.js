@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import User from "./SubComponent/User";
 import axios from "axios";
 
+/* users main page component */
+
 function Usersui() {
   const [apiData, setApiData] = useState([]);
   const [filter, setFilter] = useState([]);

@@ -7,7 +7,8 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-
+/* Pie chart component */
+/* dummy data */
 const data = [
   { name: "Group A", value: 400 },
   { name: "Group B", value: 300 },

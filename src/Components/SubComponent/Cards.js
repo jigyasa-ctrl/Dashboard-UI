@@ -1,4 +1,5 @@
 import React from "react";
+/* Card Template */
 
 function Cards({ link, title, value, color }) {
   return (
