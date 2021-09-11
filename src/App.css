@@ -13,13 +13,13 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
-.dashUI{
+.dashUI {
   display: flex;
   flex-direction: column;
   justify-content: center;
   scroll-behavior: overlay;
 }
-.user{
+.user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,7 @@ body {
   margin-bottom: 20px;
   border-radius: var(--border);
 }
-.user > img{
+.user > img {
   border-radius: 50%;
 }
 .login-side {
@@ -42,58 +42,56 @@ body {
   color: var(--text-color);
   font-size: 3rem;
 }
-.topbar-container{
+.topbar-container {
   width: 80rem;
   margin: 20px;
 }
-.dashboard, .topbar{
+.dashboard,
+.topbar {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.pie-user{
+.pie-user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.topbar > span{
+.topbar > span {
   display: flex;
   align-items: center;
 }
-.dashboard{
+.dashboard {
   background-color: var(--grey);
 }
-.meeting{
+.meeting {
   border-left-style: solid;
   border-left-color: coral;
   margin-left: 20px;
   margin-top: 20px;
 }
-.meeting > h5{
+.meeting > h5 {
   margin: 5px;
   margin-left: 10px;
- 
 }
-.sidebar{
+.sidebar {
   height: 90vh;
   width: 15rem;
-  margin:30px;
+  margin: 30px;
   border-radius: var(--border);
   background-color: var(--royal-blue);
   display: flex;
   text-align: center;
   flex-direction: column;
   color: var(--text-color);
- 
 }
-.sidebar > span > p{
-  padding:10px;
+.sidebar > span > p {
+  padding: 10px;
   margin: 10px;
   cursor: pointer;
 }
-.sidebar > span > p:hover{
- 
+.sidebar > span > p:hover {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
@@ -176,7 +174,8 @@ body {
   margin-top: 10px;
   border-radius: var(--border);
 }
-.topbar > span > input, .user-search >input {
+.topbar > span > input,
+.user-search > input {
   width: 10rem;
   background-color: var(--text-color);
   border: none;
@@ -185,17 +184,17 @@ body {
   border-radius: var(--border);
   outline: none;
 }
-.user-search >input{
+.user-search > input {
   background-color: var(--grey);
 }
-.user-search>select{
+.user-search > select {
   border: 1x solid var(--grey);
-  background-color: var(--grey) ;
+  background-color: var(--grey);
   border-radius: var(--border);
   width: 4rem;
   height: 2rem;
 }
-.user-search>button {
+.user-search > button {
   background-color: var(--royal-blue);
   border: none;
   width: 4rem;
@@ -209,13 +208,13 @@ body {
   padding-left: 10px;
 }
 
-.link-class{
+.link-class {
   color: var(--text-color);
   text-decoration: none;
 }
-.loader{
+.loader {
   position: absolute;
-  top:5%;
+  top: 5%;
   left: 40%;
   padding: 1rem;
   width: auto;
@@ -236,12 +235,13 @@ body {
   color: var(--royal-blue);
   cursor: pointer;
 }
-.login, .flex {
+.login,
+.flex {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.flex{
+.flex {
   justify-content: space-between;
 }
 
@@ -251,22 +251,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.card > h3{
+.card > h3 {
   margin: 0px;
-  margin-top:10px;
+  margin-top: 10px;
 }
-.card > p{
-  
+.card > p {
   margin: 0px;
-  margin-top:5px;
+  margin-top: 5px;
   font-size: smaller;
 }
-.card >img{
+.card > img {
   position: relative;
   left: 90%;
 }
 
-.card{
+.card {
   height: 100px;
   width: 10rem;
   display: flex;
@@ -275,73 +274,75 @@ body {
   padding-left: 30px;
   padding-top: 20px;
   border-radius: var(--border);
-
 }
 
-
-.chart > h3, .chart > p, .chart > span >h3, .chart-settings > p, .flex > p{
+.chart > h3,
+.chart > p,
+.chart > span > h3,
+.chart-settings > p,
+.flex > p {
   margin-left: 20px;
 }
-.chart >span, .chart > span> span{
+.chart > span,
+.chart > span > span {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.chart > span> span{
+.chart > span > span {
   margin-right: 20px;
 }
-.chart, .chart-settings{
+.chart,
+.chart-settings {
   background-color: var(--text-color);
   border-radius: var(--border);
   padding-top: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.chart-settings{
+.chart-settings {
   width: 23rem;
   margin-left: 1rem;
   padding-bottom: 20px;
-  
 }
-.flex > label{
-  margin-right: 20px
+.flex > label {
+  margin-right: 20px;
 }
-.piechart{
+.piechart {
   background-color: var(--text-color);
   border-radius: var(--border);
   width: 35vw;
- 
+
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .piechart > h3 {
-  margin-left: 15px
+  margin-left: 15px;
 }
-.legend{
+.legend {
   position: relative;
   top: 5%;
-  left: 90%
+  left: 90%;
 }
-.settings{
+.settings {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.form-settings{
-  width:33rem;
-
+.form-settings {
+  width: 33rem;
 }
-.form-settings>input{
+.form-settings > input {
   width: auto;
 }
-.flex > button{
+.flex > button {
   border: 1px solid red;
   background-color: var(--text-color);
   color: red;
   margin-left: 5em;
   width: 15rem;
-  padding:10px
+  padding: 10px;
 }
 .switch {
   position: relative;
@@ -350,7 +351,7 @@ body {
   height: 20px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -364,30 +365,29 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  top:1px;
+  top: 1px;
   height: 18px;
   width: 19px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #88E15E  ;
+  background-color: #88e15e;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #88E15E
-  ;
+  box-shadow: 0 0 1px #88e15e;
 }
 
 input:checked + .slider:before {
@@ -406,50 +406,49 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 600px) {
-  .login-side{
+  .login-side {
     display: none;
   }
-  body{
+  body {
     background-color: var(--grey);
   }
-  .sidebar{
+  .sidebar {
     display: none;
-
   }
-  .form-settings{
+  .form-settings {
     width: auto;
   }
-  .form-settings-2{
+  .form-settings-2 {
     flex-direction: column;
   }
-  .settings{
+  .settings {
     flex-direction: column;
   }
-  .account, .account>input{
+  .account,
+  .account > input {
     width: auto;
   }
-  .chart-settings{
+  .chart-settings {
     width: auto;
   }
-  .cards{
+  .cards {
     display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .card{
+  .card {
     width: 6rem;
   }
-  .pie-user{
+  .pie-user {
     flex-direction: column;
   }
-  .piechart{
+  .piechart {
     width: auto;
   }
   .topbar > span {
     display: none;
   }
-  .user{
+  .user {
     font-size: smaller;
   }
 }

@@ -5,14 +5,19 @@ function SettingsUI() {
     <div className="settings">
       <div>
         <form className="form form-settings">
-            <h3>Profile</h3>
-            
-            <img src ="https://static.turbosquid.com/Preview/2019/01/11__00_35_27/FM_TS2.pngEBF2CE9A-EAC1-48D4-BA04-987494C205A2Large.jpg" height="100px" width="100px" style={{borderRadius: '50%'}} />
+          <h3>Profile</h3>
+
+          <img
+            src="https://static.turbosquid.com/Preview/2019/01/11__00_35_27/FM_TS2.pngEBF2CE9A-EAC1-48D4-BA04-987494C205A2Large.jpg"
+            height="100px"
+            width="100px"
+            style={{ borderRadius: "50%" }}
+          />
           <div className="form-sub form-settings-2">
             <span className="form">
               <label>First Name</label>
               <input
-              style={{width: 'auto'}}
+                style={{ width: "auto" }}
                 type="text"
                 name="name"
                 placeholder="First Name"
@@ -22,7 +27,7 @@ function SettingsUI() {
             <span className="form">
               <label>Last Name</label>
               <input
-              style={{width: 'auto'}}
+                style={{ width: "auto" }}
                 type="name"
                 placeholder="Last Name"
                 value={localStorage.getItem("lastname")}
@@ -44,12 +49,11 @@ function SettingsUI() {
             placeholder=""
             value="323 Fifth Ave. Canadiana, NY"
           ></input>
-         
         </form>
       </div>
       <div>
         <form className="form account">
-        <h3>Profile</h3>
+          <h3>Profile</h3>
           <div className="form-sub"></div>
           <label>Email Address</label>
           <input
@@ -76,11 +80,11 @@ function SettingsUI() {
             <strong>Security</strong>
           </p>
           <span className="flex">
-          <p>2-step verification</p>
-          <label class="switch">
-            <input type="checkbox" checked></input>
-            <span class="slider round"></span>
-          </label>
+            <p>2-step verification</p>
+            <label class="switch">
+              <input type="checkbox" checked></input>
+              <span class="slider round"></span>
+            </label>
           </span>
         </div>
         <div className="chart-settings">
@@ -88,10 +92,11 @@ function SettingsUI() {
             <strong>Danger Zone</strong>
           </p>
           <span className="flex">
-        <button><strong>Delete my account</strong></button>
+            <button>
+              <strong>Delete my account</strong>
+            </button>
           </span>
         </div>
-      
       </div>
     </div>
   );

@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function User() {
-    return (
-        <div className="user">
-            <img src="https://jooinn.com/images/businessman-with-laptop-1.jpg" height="50px" width="50px" />
-            <p>Robert Thomas</p>
-            <p>robert@gmai.com</p>
-            <p>Male</p>
-            <p>Admin</p>
-            
-        </div>
-    )
+function User({ value }) {
+  console.log(value, "data");
+  return (
+    <div className="user">
+      <img src={value.image} height="50px" width="50px" />
+      <p>{value.name}</p>
+      <p>{value.email}</p>
+      <p>{value.gender}</p>
+      <p>{value.userRole}</p>
+    </div>
+  );
 }
 
-export default User
+export default User;

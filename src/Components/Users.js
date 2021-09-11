@@ -1,18 +1,21 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import Topbar from './Topbar'
-import Usersui from './Usersui'
+import React from "react";
+import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
+import Usersui from "./Usersui";
 
 function Users() {
-    return (
-        <div className="dashboard">
-            <Sidebar />
-            <div class="topbar-container" style={{overflow: 'overlay', height: '40rem'}}>
+  return (
+    <div className="dashboard">
+      <Sidebar />
+      <div
+        class="topbar-container"
+        style={{ overflow: "overlay", height: "40rem" }}
+      >
         <Topbar title="Users" />
         <Usersui />
       </div>
-        </div>
-    )
+    </div>
+  );
 }
 
-export default Users
+export default Users;

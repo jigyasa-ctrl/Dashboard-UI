@@ -7,11 +7,24 @@ function Sidebar() {
       <div className="sidebar">
         <h1>Dash.</h1>
         <span>
-          <p><Link className="link-class" to="/dashboard">Dashboard</Link></p>
+          <p>
+            <Link className="link-class" to="/dashboard">
+              Dashboard
+            </Link>
+          </p>
           <p>Transaction</p>
           <p>Schedules</p>
-          <p><Link className="link-class" to="/users"> Users</Link></p>
-          <p><Link className="link-class" to="/settings">Settings</Link></p>
+          <p>
+            <Link className="link-class" to="/users">
+              {" "}
+              Users
+            </Link>
+          </p>
+          <p>
+            <Link className="link-class" to="/settings">
+              Settings
+            </Link>
+          </p>
         </span>
       </div>
     </div>
